@@ -1,0 +1,21 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+
+# PostgreSQL data (или каквото си генерира)
+data/
+
+# Logs (ако имаш такива)
+*.log

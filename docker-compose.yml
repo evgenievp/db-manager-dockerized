@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  java_app:
+    image: your_image_name
+    build: .
+    volumes:
+      - ./target:/app/target
+    ports:
+      - "8080:8080"
+    working_dir: /app
+    command: java -jar target/ConsoleDatabaseManager-1.0-SNAPSHOT.jar
+  postgres_container:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+      - "5432:5432"
