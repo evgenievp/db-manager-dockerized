@@ -21,8 +21,8 @@ Java 17 or higher if you need to run it outside the container.
 Setup instructions:
 
 1. git clone https://github.com/evgenievp/db-manager-dockerized.git
-cd db-manager-dockerized
-2. docker-compose up --build
+2. cd db-manager-dockerized
+3. docker-compose up --build
 
 Stop container and remove data:
 docker-compose down --volumes --rmi all
